@@ -14,9 +14,9 @@ app.use(express.urlencoded({ extended: true, limit: "2mb" }));
 app.use(express.json({ limit: "2mb" }));
 app.use(cors({}));
 
-// app.get("/", (req, res) => {
-//   res.send("<h2>Home<h2/>");
-// });
+app.get("/", (req, res) => {
+res.send("<h2>Home<h2/>");
+});
 
 app.use("/api/hey", router);
 
