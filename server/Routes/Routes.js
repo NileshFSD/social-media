@@ -20,7 +20,7 @@ import {
 const router = express.Router();
 
 // Authentication Routes--------------
-router.get("/home", homePage);
+router.get("/", homePage);
 router.post("/auth/registration", registration);
 router.post("/auth/login", login);
 
