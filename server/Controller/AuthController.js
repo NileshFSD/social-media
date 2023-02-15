@@ -6,10 +6,6 @@ import Post from "../Models/Post.js";
 import mongoose from "mongoose";
 dotenv.config();
 
-export const homePage = (req, res) => {
-  res.status(200).send("<h2>Home Page </h2>");
-};
-
 // ------------------------------REGISTRATION---------------------------------------
 export const registration = async (req, res) => {
   try {
@@ -184,7 +180,6 @@ export const getFollowing = async (req, res) => {
     const followers = users.filter((u) => {
       return u.following.includes(userId);
     });
-    console.log(followers);
     res.status(200).json({
       success: true,
       msg: "Following list got successfully ",
