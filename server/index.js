@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true, limit: "2mb" }));
 app.use(express.json({ limit: "2mb" }));
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://rich-gold-pangolin-kilt.cyclic.app" }));
 
 app.get("/", (req, res) => {
   res.send("<h2>Home<h2/>");
