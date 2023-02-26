@@ -26,16 +26,6 @@ function App() {
           </Route>
           <Route path="/" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          {/* <Route
-            path="/login"
-            element={<ProtectedProfile Component={Login} />}
-          /> */}
-
-          {/* <Route
-            path="/dashboard"
-            element={<ProtectedRoute Component={Dashboard} />}
-          /> */}
-
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
